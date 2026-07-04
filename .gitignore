@@ -1,0 +1,69 @@
+# dependencies
+node_modules/
+.pnpm-store/
+.npm/
+.pnp
+.pnp.js
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.yarn/install-state.gz
+
+# build outputs
+.next/
+out/
+build/
+dist/
+coverage/
+.turbo/
+.vercel/
+.netlify/
+*.tsbuildinfo
+next-env.d.ts
+
+# environment
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*
+!.env.example
+
+# logs and local diagnostics
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+build_error.log
+build_error.txt
+
+# caches
+.eslintcache
+.cache/
+.parcel-cache/
+.sass-cache/
+
+# editors and OS files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.pem
+*.swp
+*.swo
+
+# local uploads and temp files
+uploads/
+media/
+tmp/
+temp/
+
+# git and tooling metadata
+.git-history/
+.gemini/
