@@ -20,6 +20,14 @@ export const metadata: Metadata = {
     siteName: PORTFOLIO.site.name,
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: PORTFOLIO.site.name,
+      },
+    ],
   },
   robots: {
     index: true,
@@ -35,6 +43,7 @@ export const metadata: Metadata = {
   twitter: {
     title: PORTFOLIO.site.name,
     card: "summary_large_image",
+    images: ["/og.png"],
   },
   verification: {
     google: "",
