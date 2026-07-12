@@ -4,7 +4,7 @@ import type {
   ProofDetail,
 } from "@/data/types";
 
-export const BASE_PATH = process.env.NODE_ENV === "production" ? "/Portfolio" : "";
+export const BASE_PATH = "";
 
 export const siteConfig = {
   name: "Vaibhav Saini",
