@@ -72,8 +72,8 @@ const config = {
           to: { height: "0" },
         },
         "glow-pulse": {
-          "0%, 100%": { boxShadow: "0 0 20px hsl(152 69% 46% / 0.06)" },
-          "50%": { boxShadow: "0 0 35px hsl(152 69% 46% / 0.12)" },
+          "0%, 100%": { boxShadow: "0 0 20px hsl(var(--primary) / 0.06)" },
+          "50%": { boxShadow: "0 0 35px hsl(var(--primary) / 0.12)" },
         },
       },
       animation: {
