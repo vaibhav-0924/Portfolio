@@ -9,7 +9,7 @@ export const BASE_PATH = "";
 export const siteConfig = {
   name: "Vaibhav Saini",
   initials: "VS",
-  url: "https://vaibhav-0924.github.io/Portfolio/",
+  url: "https://vaibhavdev.online/",
   location: "Delhi, India",
   email: "vaibhavsaini2409@gmail.com",
   avatarUrl: `${BASE_PATH}/profile/profile.jpeg`,
