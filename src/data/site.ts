@@ -42,14 +42,14 @@ export const navigation: readonly NavigationItem[] = [
   { label: "About", href: "/about" },
   { label: "Projects", href: "/projects" },
   { label: "Skills", href: "/skills" },
-  { label: "Proof", href: "#proof" },
+  { label: "Proof", href: "/proof" },
   {
     label: "Resume",
     href: siteConfig.resumeUrl,
     external: true,
     download: true,
   },
-  { label: "Contact", href: "#contact" },
+  { label: "Contact", href: "/contact" },
 ] as const;
 
 export const heroContent = {
