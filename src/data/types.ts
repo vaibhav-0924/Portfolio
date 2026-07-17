@@ -24,10 +24,12 @@ export interface ProjectLink {
 }
 
 export interface FeaturedProject {
+  slug: string;
   name: string;
   tagline: string;
   year: string;
   description: string;
+  longDescription?: string;
   technologies: readonly string[];
   outcomes: readonly string[];
   image: string;
@@ -35,9 +37,13 @@ export interface FeaturedProject {
 }
 
 export interface OtherProject {
+  slug: string;
   name: string;
   tagline?: string;
+  description?: string;
+  longDescription?: string;
   technologies: readonly string[];
+  image?: string;
   links?: readonly ProjectLink[];
 }
 

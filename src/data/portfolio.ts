@@ -10,7 +10,7 @@ import {
   siteConfig,
   socialLinks,
 } from "@/data/site";
-import { featuredProjects, otherProjects } from "@/data/projects";
+import { featuredProjects, otherProjects, allProjects, getProjectBySlug, getAllProjectSlugs } from "@/data/projects";
 import { skillGroups } from "@/data/skills";
 
 export const PORTFOLIO = {
@@ -22,9 +22,12 @@ export const PORTFOLIO = {
   projectsContent,
   featuredProjects,
   otherProjects,
+  allProjects,
   skillGroups,
   proof: proofContent,
   opportunity: opportunityContent,
   contact: contactContent,
   socialLinks,
 } as const;
+
+export { getProjectBySlug, getAllProjectSlugs };

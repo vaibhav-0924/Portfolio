@@ -39,9 +39,9 @@ export const socialLinks = {
 } as const;
 
 export const navigation: readonly NavigationItem[] = [
-  { label: "About", href: "#about" },
-  { label: "Projects", href: "#projects" },
-  { label: "Skills", href: "#skills" },
+  { label: "About", href: "/about" },
+  { label: "Projects", href: "/projects" },
+  { label: "Skills", href: "/skills" },
   { label: "Proof", href: "#proof" },
   {
     label: "Resume",
@@ -62,7 +62,7 @@ export const heroContent = {
 } as const;
 
 export const heroActions: readonly ActionLink[] = [
-  { label: "View Projects", href: "#projects", variant: "default" },
+  { label: "View Projects", href: "/projects", variant: "default" },
   {
     label: "View Resume",
     href: siteConfig.resumeUrl,
