@@ -14,7 +14,7 @@ export const siteConfig = {
   email: "vaibhavsaini2409@gmail.com",
   avatarUrl: `${BASE_PATH}/profile/profile.jpeg`,
   resumeUrl: `${BASE_PATH}/documents/resume.pdf`,
-  role: "Full-Stack Developer | Product Engineering Intern Candidate",
+  role: "Full-Stack Developer | Product Engineering",
   metaDescription:
     "Vaibhav Saini builds full-stack AI and web products across interfaces, APIs, authentication, databases, and product-focused engineering workflows.",
 } as const;
@@ -30,7 +30,11 @@ export const socialLinks = {
   },
   github: {
     label: "GitHub",
-    href: "https://github.com/vaibhav-0924",
+    href: "https://github.com/vbhvx",
+  },
+  x: {
+    label: "X",
+    href: "https://x.com/vbhvdev",
   },
   resume: {
     label: "Resume",
@@ -106,15 +110,15 @@ export const proofContent: {
   details: [
     {
       text: "Usable demos that let teams inspect behavior, not just screenshots",
-      href: "https://github.com/vaibhav-0924/Notiq",
+      href: "https://github.com/vbhvx/Notiq",
     },
     {
       text: "Documented architecture decisions across auth, APIs, schemas, and AI workflows",
-      href: "https://github.com/vaibhav-0924/NexaAPI",
+      href: "https://github.com/vbhvx/NexaAPI",
     },
     {
       text: "Continuous improvement through public code, measurable benchmarks, and code review",
-      href: "https://github.com/vaibhav-0924",
+      href: "https://github.com/vbhvx",
     },
   ],
 } as const;

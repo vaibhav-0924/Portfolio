@@ -20,7 +20,7 @@ export const featuredProjects: readonly FeaturedProject[] = [
     ],
     image: `${BASE_PATH}/projects/notiq.png`,
     links: [
-      { label: "GitHub", kind: "source", href: "https://github.com/vaibhav-0924/Notiq" },
+      { label: "GitHub", kind: "source", href: "https://github.com/vbhvx/Notiq" },
       { label: "Demo", kind: "demo" },
     ],
   },
@@ -42,7 +42,7 @@ export const featuredProjects: readonly FeaturedProject[] = [
     ],
     image: `${BASE_PATH}/projects/stackaudit.png`,
     links: [
-      { label: "GitHub", kind: "source", href: "https://github.com/vaibhav-0924/StackAudit" },
+      { label: "GitHub", kind: "source", href: "https://github.com/vbhvx/StackAudit" },
       { label: "Demo", kind: "demo" },
     ],
   },
@@ -64,7 +64,7 @@ export const featuredProjects: readonly FeaturedProject[] = [
     ],
     image: `${BASE_PATH}/projects/nexaapi.png`,
     links: [
-      { label: "GitHub", kind: "source", href: "https://github.com/vaibhav-0924/NexaAPI" },
+      { label: "GitHub", kind: "source", href: "https://github.com/vbhvx/NexaAPI" },
       { label: "Demo", kind: "demo" },
     ],
   },
@@ -81,7 +81,7 @@ export const otherProjects: readonly OtherProject[] = [
       "Orbit is a real-time collaboration platform built to explore patterns in team-based software. It features Supabase's real-time subscriptions for live data sync, tRPC for end-to-end type-safe API calls, and a granular RBAC system that controls access at the project and workspace level. The app supports team invitations, permission management, and activity tracking across collaborative workspaces.",
     technologies: ["Next.js", "Supabase", "tRPC", "RBAC"],
     image: `${BASE_PATH}/projects/orbit.png`,
-    links: [{ label: "GitHub", kind: "source", href: "https://github.com/vaibhav-0924/Orbit" }],
+    links: [{ label: "GitHub", kind: "source", href: "https://github.com/vbhvx/Orbit" }],
   },
   {
     slug: "vibeperfume",
@@ -93,7 +93,7 @@ export const otherProjects: readonly OtherProject[] = [
       "VibePerfume is a product-focused e-commerce application built to demonstrate commerce UI patterns and full-stack data flow. The frontend uses React with Vite for a fast development experience, featuring product catalog pages, filtering, cart state management, and responsive storefront layouts. The backend runs on Express.js with MongoDB for product and order data, implementing RESTful endpoints for product CRUD, cart operations, and order processing.",
     technologies: ["React", "Express.js", "MongoDB", "Vite"],
     image: `${BASE_PATH}/projects/vibeperfume.png`,
-    links: [{ label: "GitHub", kind: "source", href: "https://github.com/vaibhav-0924/VibePerfume" }],
+    links: [{ label: "GitHub", kind: "source", href: "https://github.com/vbhvx/VibePerfume" }],
   },
   {
     slug: "stackauth",
@@ -105,7 +105,7 @@ export const otherProjects: readonly OtherProject[] = [
       "StackAuth is a focused backend project demonstrating authentication-first API design. It implements JWT-based authentication with refresh token rotation, bcrypt password hashing, and session management. The data layer uses PostgreSQL with structured migrations, and the entire stack runs in Docker containers for consistent development and deployment. The project serves as a reference implementation for secure auth patterns in Node.js applications.",
     technologies: ["Express.js", "PostgreSQL", "JWT", "Docker"],
     image: `${BASE_PATH}/projects/stackauth.png`,
-    links: [{ label: "GitHub", kind: "source", href: "https://github.com/vaibhav-0924/StackAuth" }],
+    links: [{ label: "GitHub", kind: "source", href: "https://github.com/vbhvx/StackAuth" }],
   },
   {
     slug: "crm-qa-automation",
@@ -117,7 +117,7 @@ export const otherProjects: readonly OtherProject[] = [
       "CRM QA Automation is a comprehensive testing project that demonstrates quality assurance patterns for a CRM application. It includes Cypress end-to-end tests covering user flows like lead creation, contact management, and pipeline stages. The API layer is validated with Postman collections that verify contract compliance, response schemas, and edge cases. The test suite integrates with CI/CD pipelines for automated regression testing on every push.",
     technologies: ["Cypress", "Postman", "Node.js", "CI/CD"],
     image: `${BASE_PATH}/projects/crm-qa.png`,
-    links: [{ label: "GitHub", kind: "source", href: "https://github.com/vaibhav-0924/CRM_QA_Automation" }],
+    links: [{ label: "GitHub", kind: "source", href: "https://github.com/vbhvx/CRM_QA_Automation" }],
   },
 ] as const;
 

@@ -43,6 +43,7 @@ export const metadata: Metadata = {
   twitter: {
     title: PORTFOLIO.site.name,
     card: "summary_large_image",
+    creator: "@vbhvdev",
     images: ["/og.png"],
   },
   verification: {

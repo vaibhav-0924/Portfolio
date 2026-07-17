@@ -69,6 +69,18 @@ export default function Navbar() {
               <Icons.github className="size-4" />
               <span className="sr-only">GitHub</span>
             </a>
+            <a
+              href={PORTFOLIO.socialLinks.x.href}
+              rel="noopener noreferrer"
+              target="_blank"
+              className={cn(
+                buttonVariants({ variant: "ghost", size: "icon" }),
+                "size-8 rounded-full"
+              )}
+            >
+              <Icons.x className="size-4" />
+              <span className="sr-only">X</span>
+            </a>
             <ModeToggle />
 
             {/* Hamburger button — mobile only */}

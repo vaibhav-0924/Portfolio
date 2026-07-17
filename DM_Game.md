@@ -25,7 +25,7 @@ Higher the volume, the better the result. The goal is **100 DMs a day, minimum**
 
 Before sending a single DM, make sure your public presence is airtight:
 
-### GitHub — [github.com/vaibhav-0924](https://github.com/vaibhav-0924)
+### GitHub — [github.com/vbhvx](https://github.com/vbhvx)
 - **Pinned projects** with clean READMEs, documented architecture, and recent commits
 - Top pins: **Notiq**, **StackAudit**, **NexaAPI**
 - Supporting projects: Orbit, VibePerfume, StackAuth, CRM QA Automation
@@ -155,7 +155,8 @@ Featured work:
 • NexaAPI — REST API platform (JWT, RBAC, Swagger, React)
 
 Portfolio: https://vaibhavdev.online
-GitHub: https://github.com/vaibhav-0924
+GitHub: https://github.com/vbhvx
+X: https://x.com/vbhvdev
 
 Based in Delhi, India — happy to work in your timezone.
 Would love to discuss how I can contribute.
@@ -234,7 +235,8 @@ When writing DMs or having conversations, lead with these:
 
 ### Links
 - **Portfolio**: [vaibhavdev.online](https://vaibhavdev.online/)
-- **GitHub**: [github.com/vaibhav-0924](https://github.com/vaibhav-0924)
+- **GitHub**: [github.com/vbhvx](https://github.com/vbhvx)
+- **X**: [x.com/vbhvdev](https://x.com/vbhvdev)
 - **LinkedIn**: [linkedin.com/in/vaibhavsaini2](https://linkedin.com/in/vaibhavsaini2/)
 - **Email**: vaibhavsaini2409@gmail.com
 
