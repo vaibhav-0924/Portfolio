@@ -1,4 +1,4 @@
-export type ButtonVariant =
+type ButtonVariant =
   | "default"
   | "destructive"
   | "outline"
@@ -47,7 +47,7 @@ export interface OtherProject {
   links?: readonly ProjectLink[];
 }
 
-export interface SkillItem {
+interface SkillItem {
   name: string;
   usedIn?: readonly string[];
 }
