@@ -240,10 +240,110 @@ When writing DMs or having conversations, lead with these:
 - **LinkedIn**: [linkedin.com/in/vaibhavsaini2](https://linkedin.com/in/vaibhavsaini2/)
 - **Email**: vaibhavsaini2409@gmail.com
 
+## Interview Prep — Ready Answers
+
+> When the DMs land you calls, nail these three questions every time.
+
+### Q1: Introduce Yourself
+
+> Don't start with your name. Start with your value journey.
+
+```
+I started by being curious about how real products work under the hood —
+not just the UI, but the authentication, the APIs, the database schemas,
+the entire engineering behind a product. So I began building full-stack
+applications from scratch.
+
+Over the course of my projects, I've shipped three production-grade apps —
+an AI-powered notes workspace, an AI spend audit platform, and a REST API
+platform — each one going deeper into areas like authentication with JWT
+and NextAuth, API design with role-based access control, database modeling
+with Prisma and PostgreSQL, and AI integrations across Gemini, Claude, and
+OpenAI APIs.
+
+What I learned through this process is that building software isn't just
+about writing code — it's about making architecture decisions, handling
+tradeoffs, and documenting why things are built a certain way so the work
+speaks for itself.
+
+I'm here today because I'm ready to take everything I've built independently
+and apply it inside a team — where I can contribute to real product problems,
+learn from experienced engineers through code reviews, and grow faster than
+I can on my own.
+```
+
+### Q2: Why Should We Hire You?
+
+> Answer the three hidden questions: Can you solve our problems? Can you learn quickly? Will you improve our processes?
+
+```
+Can I solve your problems? — I understand that this role needs someone who
+can pick up real feature work across the stack. Through my projects, I've
+already worked through the exact problems product teams deal with daily —
+building authenticated user flows, designing REST APIs with proper validation
+and documentation, modeling databases with migrations and relationships, and
+integrating AI APIs with fallback pipelines for reliability.
+
+For example, in Notiq I implemented credential-based auth, 10+ protected API
+routes, and user-scoped data isolation. In NexaAPI, I built versioned APIs
+with controller-service-model separation, JWT auth, RBAC, rate limiting, and
+auto-generated Swagger docs. These aren't tutorial projects — they're
+production-pattern implementations. I'm confident I can start contributing
+to scoped feature work quickly.
+
+Can I learn quickly? — Every project I've shipped required me to learn
+something new on my own — Prisma and PostgreSQL for Notiq, Supabase and
+multi-LLM fallback pipelines for StackAudit, Swagger and RBAC patterns for
+NexaAPI. I didn't wait for a course to finish. I picked up the tool, read
+the docs, built with it, and shipped. I'm also very comfortable receiving
+feedback — I document my architecture decisions and tradeoffs publicly on
+GitHub specifically so my thinking process is visible and reviewable.
+
+Will I make your processes better? — I believe in making things better
+around me, not just completing my own tasks. When I see a problem, I try
+to bring a solution along with it. I've built automated testing suites
+with Cypress and Postman, CI/CD pipelines with GitHub Actions, and Swagger
+documentation to make APIs self-explanatory. My instinct is to leave the
+codebase and the workflow better than I found it.
+```
+
+### Q3: Do You Have Any Questions for Us?
+
+> Ask in three layers: Company → Role → People.
+
+```
+Layer 1 — Company:
+"I'd love to understand the bigger picture. What is the company's product
+vision for the next 2–3 years? And what would you say is the biggest
+technical or business challenge the team is currently navigating?"
+
+Layer 2 — Role:
+"What does success look like in this role during the first 6 months? If I
+get this opportunity and you looked back a year later, what would I need to
+have accomplished for you to feel confident that hiring me was the right
+decision?"
+
+Layer 3 — People:
+"What qualities do the most successful engineers or interns on this team
+have in common? Is there something that separates the people who really
+thrive here from those who don't?"
+```
+
+### Quick Reference Card
+
+| Question | Key Anchors |
+|---|---|
+| **Introduce yourself** | Curiosity about how products work → Built 3 full-stack apps (Notiq, StackAudit, NexaAPI) → Auth, APIs, databases, AI → Ready to contribute inside a team |
+| **Why hire you?** | ① Production patterns across the stack ② Self-taught every tool, docs-first learner ③ Automates, documents, improves processes |
+| **Questions for them** | ① Company vision + biggest challenge ② Success metrics for 6-12 months ③ Traits of top performers on the team |
+
+> **Tip:** Lead with **Notiq** for product/full-stack roles, **NexaAPI** for backend roles, and **StackAudit** for AI-related roles.
+
 ---
 
 ## Now Go
 
 > **Keep the DM game strong.**
 
-Scout 4 hrs → 100 DMs to founders → Skip application forms → Follow up every 2 days, 3 times → Signed in days, not months.
+Scout 4 hrs → 100 DMs to founders → Skip application forms → Follow up every 2 days, 3 times → Nail the interview → Signed in days, not months.
+

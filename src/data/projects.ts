@@ -21,7 +21,7 @@ export const featuredProjects: readonly FeaturedProject[] = [
     image: `${BASE_PATH}/projects/notiq.png`,
     links: [
       { label: "GitHub", kind: "source", href: "https://github.com/vbhvx/Notiq" },
-      { label: "Demo", kind: "demo" },
+      { label: "Demo", kind: "demo", href: "https://notiq.vaibhavdev.online/dashboard" },
     ],
   },
   {
