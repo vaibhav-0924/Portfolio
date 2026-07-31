@@ -63,16 +63,4 @@ export const skillGroups: readonly SkillGroup[] = [
       { name: "Structured Output", usedIn: ["Notiq", "StackAudit"] },
     ],
   },
-  {
-    title: "Testing & Tools",
-    items: [
-      { name: "Cypress", usedIn: ["CRM QA Automation"] },
-      { name: "Postman", usedIn: ["CRM QA Automation", "NexaAPI"] },
-      { name: "Git" },
-      { name: "GitHub Actions" },
-      { name: "Docker", usedIn: ["StackAuth"] },
-      { name: "Swagger", usedIn: ["NexaAPI"] },
-      { name: "Vercel", usedIn: ["Notiq", "StackAudit"] },
-    ],
-  },
 ] as const;

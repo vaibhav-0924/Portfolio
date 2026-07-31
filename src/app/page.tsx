@@ -284,19 +284,22 @@ export default function Page() {
                 <h3 className="text-lg font-semibold">{group.title}</h3>
                 <div className="mt-4 flex flex-wrap gap-2">
                   {group.items.map((skill) => {
+                    const isInteractive = !!skill.usedIn;
                     const badge = (
                       <Badge
                         key={skill.name}
                         variant="secondary"
-                        className={`rounded-full px-3 py-1 text-xs ${
-                          skill.usedIn ? "border-primary/20 bg-primary/5 hover:bg-primary/10" : ""
+                        className={`rounded-full px-3 py-1 text-xs transition-all duration-300 ${
+                          isInteractive
+                            ? "cursor-pointer border-primary/30 bg-primary/10 hover:scale-105 hover:bg-primary/20 hover:shadow-sm hover:shadow-primary/20"
+                            : "opacity-80"
                         }`}
                       >
                         {skill.name}
                       </Badge>
                     );
 
-                    if (!skill.usedIn) return badge;
+                    if (!isInteractive) return badge;
 
                     return (
                       <Tooltip key={skill.name}>
