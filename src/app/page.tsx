@@ -299,7 +299,7 @@ export default function Page() {
                       </Badge>
                     );
 
-                    if (!isInteractive) return badge;
+                    if (!skill.usedIn) return badge;
 
                     return (
                       <Tooltip key={skill.name}>
