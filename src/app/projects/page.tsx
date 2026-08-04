@@ -34,9 +34,9 @@ export default function ProjectsPage() {
         />
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
           <p className="max-w-3xl text-base leading-7 text-muted-foreground sm:text-lg">
-            Every project here demonstrates end-to-end product engineering — from
-            database schemas and API contracts to polished user interfaces. Click
-            any project to explore its architecture, decisions, and source code.
+            Each project covers the full stack — from database schemas and API
+            routes to polished user interfaces. Click any project to see its
+            details and source code.
           </p>
         </BlurFade>
       </section>
@@ -49,10 +49,10 @@ export default function ProjectsPage() {
               Featured
             </div>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
-              Flagship builds
+              Featured projects
             </h2>
             <p className="text-muted-foreground">
-              Deep full-stack projects with AI, auth, APIs, and data modeling.
+              Full-stack projects with AI, auth, APIs, and data modeling.
             </p>
           </div>
         </BlurFade>

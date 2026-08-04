@@ -114,8 +114,8 @@ export default function Page() {
           <div className="glass gradient-border space-y-6 rounded-[2rem] p-6 sm:p-8">
             <div className="flex items-center gap-4">
               <div className="relative">
-                <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-emerald-500/25 via-emerald-400/15 to-green-500/10 blur-md animate-glow-pulse" />
-                <Avatar className="relative size-24 border-2 border-emerald-500/20 ring-2 ring-emerald-500/10 ring-offset-2 ring-offset-background">
+                <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-primary/30 via-accent/20 to-primary/10 blur-md animate-glow-pulse" />
+                <Avatar className="relative size-24 border-2 border-primary/30 ring-2 ring-primary/10 ring-offset-2 ring-offset-background">
                   <AvatarImage
                     alt={PORTFOLIO.site.name}
                     src={PORTFOLIO.site.avatarUrl}
@@ -139,15 +139,15 @@ export default function Page() {
               <div className="grid gap-3 text-sm text-foreground/90">
                 <div className="flex items-start gap-3">
                   <span className="mt-2 size-1.5 shrink-0 rounded-full bg-primary" />
-                  <span>Flagship work spans AI workflows, secure APIs, and database-backed product behavior.</span>
+                  <span>Projects cover AI integrations, REST APIs, authentication, and database-backed features.</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="mt-2 size-1.5 shrink-0 rounded-full bg-primary" />
-                  <span>Source code shows authentication, RBAC, validation, rate limiting, and API documentation patterns.</span>
+                  <span>Source code shows authentication, input validation, rate limiting, and API documentation.</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="mt-2 size-1.5 shrink-0 rounded-full bg-primary" />
-                  <span>Building a clearer evidence trail through demos, benchmarks, and concise technical case studies.</span>
+                  <span>All projects have public source code and live demos where possible.</span>
                 </div>
               </div>
             </div>
@@ -232,7 +232,7 @@ export default function Page() {
           <div className="mt-16 border-t border-border/30 pt-10">
             <div className="mb-8 text-center">
               <h3 className="text-2xl font-bold">Other Projects</h3>
-              <p className="mt-2 text-muted-foreground">Additional builds that show breadth across collaboration, commerce, auth, and testing workflows.</p>
+              <p className="mt-2 text-muted-foreground">Additional builds covering AI agents, mobile, auth services, testing, and dashboards.</p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {PORTFOLIO.otherProjects.map((project, index) => (
@@ -241,8 +241,8 @@ export default function Page() {
                   delay={BLUR_FADE_DELAY * 11 + index * 0.05}
                   inView
                 >
-                  <div className="glass flex h-full flex-col rounded-[1.5rem] border border-border/40 p-5 transition-colors hover:border-primary/30">
-                    <div className="mb-4 text-primary opacity-80 transition-transform hover:scale-110">
+                  <div className="glass flex h-full flex-col rounded-[1.5rem] border border-border/40 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/10">
+                    <div className="mb-4 text-primary opacity-80 transition-transform duration-300 hover:scale-110">
                       <Icons.folder className="size-8" />
                     </div>
                     <h4 className="mb-1 font-semibold">{project.name}</h4>
@@ -338,7 +338,7 @@ export default function Page() {
                     </div>
                   );
 
-                  const baseClass = "group rounded-2xl border border-border/50 bg-background/30 p-4 transition-all hover:bg-primary/5 hover:border-primary/20";
+                  const baseClass = "group rounded-2xl border border-border/50 bg-background/30 p-4 transition-all duration-300 hover:-translate-y-1 hover:bg-primary/5 hover:border-primary/30 hover:shadow-md hover:shadow-primary/5";
 
                   if (detail.href) {
                     return (

@@ -66,7 +66,7 @@ export default function ProjectDetailPage({ params }: PageProps) {
             <BlurFade delay={BLUR_FADE_DELAY * 2}>
               <div className="flex flex-wrap items-center gap-3">
                 {isFeatured && (
-                  <span className="inline-flex rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-emerald-400">
+                  <span className="inline-flex rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-primary">
                     Featured
                   </span>
                 )}

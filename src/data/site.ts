@@ -14,9 +14,9 @@ export const siteConfig = {
   email: "vaibhavsaini2409@gmail.com",
   avatarUrl: `${BASE_PATH}/profile/profile.jpeg`,
   resumeUrl: `${BASE_PATH}/documents/resume.pdf`,
-  role: "Full-Stack Developer | Product Engineering",
+  role: "B.Tech CS — Personal web projects",
   metaDescription:
-    "Vaibhav Saini builds full-stack AI and web products across interfaces, APIs, authentication, databases, and product-focused engineering workflows.",
+    "Vaibhav Saini builds personal projects covering frontends, APIs, authentication, databases, and AI integrations.",
 } as const;
 
 export const socialLinks = {
@@ -43,26 +43,26 @@ export const socialLinks = {
 } as const;
 
 export const navigation: readonly NavigationItem[] = [
-  { label: "About", href: "/about" },
-  { label: "Projects", href: "/projects" },
-  { label: "Skills", href: "/skills" },
-  { label: "Proof", href: "/proof" },
+  { label: "About", href: "/#about" },
+  { label: "Projects", href: "/#projects" },
+  { label: "Skills", href: "/#skills" },
+  { label: "Proof", href: "/#proof" },
   {
     label: "Resume",
     href: siteConfig.resumeUrl,
     external: true,
     download: true,
   },
-  { label: "Contact", href: "/contact" },
+  { label: "Contact", href: "/#contact" },
 ] as const;
 
 export const heroContent = {
-  availabilityLabel: "PRODUCT ENGINEERING: AUTH, APIS, DATABASES, AI",
-  title: siteConfig.name,
-  subtitle: "Full-stack AI and web products — from UI to database",
-  stack: "Next.js | TypeScript | React | Node.js | REST APIs | Databases",
+  availabilityLabel: "FULL-STACK ENGINEER",
+  title: "Vaibhav Saini",
+  subtitle: "Full-Stack Dev · Build What Matters",
+  stack: "Next.js | FastAPI | NestJS | PostgreSQL",
   summary:
-    "Product ideas turned into working software across interface, API, data, and AI layers. Each project here documents its architecture decisions, tradeoffs, and source code so the work speaks for itself.",
+    "I build full-stack web applications. I focus on database design, API development, and connecting frontends to reliable backends.",
 } as const;
 
 export const heroActions: readonly ActionLink[] = [
@@ -86,18 +86,18 @@ export const aboutContent = {
   title: "About",
   focusTitle: "Focus areas",
   focusDescription:
-    "Connecting product intent with implementation details: clear user flows, secure access, maintainable APIs, practical data models, and AI-assisted behavior.",
+    "Building web applications with a focus on data modeling and APIs.",
   paragraphs: [
-    "Each project here is built with Next.js, TypeScript, Node.js, databases, authentication, and AI API integrations — with documented decisions behind every technical choice.",
-    "The work demonstrates how data is modeled, routes are protected, APIs are shaped, fallbacks are handled, and features are made understandable to both users and engineers.",
+    "I am a software engineer who works across the stack. Most of my recent work involves Next.js, Node.js, Python, and PostgreSQL.",
+    "I focus on understanding how data is structured and how APIs are designed. In my projects, I try to solve practical problems like managing access control, handling background tasks, and integrating AI models into existing workflows.",
   ],
 } as const;
 
 export const projectsContent = {
   eyebrow: "Selected Work",
-  title: "Product-minded engineering, shown in code",
+  title: "Projects, shown in code",
   description:
-    "A focused set of builds covering AI workflows, backend/API depth, authentication, data modeling, and user-facing product behavior.",
+    "A set of personal projects that cover frontends, APIs, authentication, RBAC, data modeling, and AI integrations.",
 } as const;
 
 export const proofContent: {
@@ -109,35 +109,35 @@ export const proofContent: {
   title: "How the work is structured for review",
   details: [
     {
-      text: "Usable demos that let teams inspect behavior, not just screenshots",
+      text: "Live demos that let you try the actual apps, not just screenshots",
       href: "https://github.com/vbhvx/Notiq",
     },
     {
-      text: "Documented architecture decisions across auth, APIs, schemas, and AI workflows",
+      text: "Public source code with READMEs covering auth, APIs, schemas, and AI integrations",
       href: "https://github.com/vbhvx/NexaAPI",
     },
     {
-      text: "Continuous improvement through public code, measurable benchmarks, and code review",
+      text: "Continuous improvement through public code and iterative development",
       href: "https://github.com/vbhvx",
     },
   ],
 } as const;
 
 export const opportunityContent = {
-  eyebrow: "Collaboration Fit",
-  title: "Areas of immediate contribution",
+  eyebrow: "Interests",
+  title: "Areas I'm excited to work on",
   details: [
-    "Feature implementation across UI, API, and data layers",
-    "Backend-heavy product workflows",
-    "Authentication, authorization, and documentation",
-    "AI-assisted product features",
+    "Frontend and API work with React, Next.js, and Node.js",
+    "Authentication, RBAC, and access control",
+    "Database design and API structure",
+    "AI API integrations and simple agent workflows",
   ],
 } as const;
 
 export const contactContent = {
   title: "Get in Touch",
   description:
-    "Looking for a developer who can take on scoped full-stack work, communicate tradeoffs clearly, and grow through code review? Let's talk.",
+    "I'm looking for junior software engineering roles where I can contribute to real products and keep learning. Let's connect.",
   actions: [
     {
       label: "Email",
