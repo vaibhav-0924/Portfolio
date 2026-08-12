@@ -3,19 +3,41 @@ import type { FeaturedProject, OtherProject } from "@/data/types";
 
 export const featuredProjects: readonly FeaturedProject[] = [
   {
-    slug: "orbit",
-    name: "Orbit",
-    tagline: "Collaborative task manager",
+    slug: "buildra",
+    name: "Buildra",
+    tagline: "AI-powered code generation platform",
     year: "2026",
     description:
-      "A task manager with workspaces and Kanban boards. Built with Next.js, tRPC, and PostgreSQL. Used fractional indexing to handle drag-and-drop ordering and set up role-based access control.",
+      "Users describe web applications in natural language and receive working Next.js applications inside cloud sandboxes. Built with an AI agent loop using Gemini, event-driven pipelines via Inngest, and real-time token streaming via Server-Sent Events.",
     longDescription:
-      "This is a full-stack project management tool. I built it to learn how to handle state synchronization and access control. It features an organization-level workspace, Kanban boards, and user roles.",
-    technologies: ["Next.js", "tRPC", "Drizzle ORM", "PostgreSQL", "Tailwind"],
+      "Buildra is an AI code generation platform where users describe what they want in plain English, and the system generates a fully functional Next.js application. The generated code runs inside E2B cloud sandboxes with a live preview, file explorer, and real-time streaming. I built an iterative AI agent loop that generates code, detects errors, and self-corrects — all orchestrated through Inngest event-driven pipelines for reliability and observability.",
+    technologies: ["Next.js", "TypeScript", "React 19", "Inngest", "E2B", "Gemini AI", "Prisma", "PostgreSQL", "Clerk Auth", "SSE"],
     outcomes: [
-      "Built a PostgreSQL database schema to support role-based access control (RBAC) across organizations.",
-      "Added a Kanban board that uses fractional indexing to update task order without needing to rewrite multiple rows.",
-      "Used tRPC to connect the Next.js frontend to the database with end-to-end type safety.",
+      "Architected an AI agent loop using Gemini and Inngest that iteratively generates, validates, and corrects code across multiple files.",
+      "Integrated E2B cloud sandboxes for secure code execution with real-time preview and file system exploration.",
+      "Implemented Server-Sent Events for token-by-token streaming, reducing perceived latency by ~60% compared to batch responses.",
+      "Built with Clerk authentication, Prisma ORM, and React 19 Server Components for a production-grade frontend.",
+    ],
+    image: `${BASE_PATH}/projects/buildra.png`,
+    links: [
+      { label: "GitHub", kind: "source", href: "https://github.com/vbhvx/Buildra" },
+    ],
+  },
+  {
+    slug: "orbit",
+    name: "Orbit",
+    tagline: "Multi-tenant collaborative platform",
+    year: "2026",
+    description:
+      "A multi-tenant task management platform with organization-level data isolation, tRPC for end-to-end type safety, and fractional indexing for O(1) drag-and-drop reordering. Designed with Drizzle ORM and PostgreSQL.",
+    longDescription:
+      "Orbit is a collaborative task platform built for teams. Each organization gets isolated data — users can only see and modify resources within their org. I used tRPC for end-to-end type safety between the Next.js frontend and the API layer, Drizzle ORM for type-safe database queries, and implemented fractional indexing for the Kanban board to enable O(1) reordering without rewriting multiple database rows.",
+    technologies: ["Next.js", "TypeScript", "tRPC", "Drizzle ORM", "PostgreSQL", "Supabase Auth", "Tailwind", "DnD Kit"],
+    outcomes: [
+      "Designed a multi-tenant PostgreSQL schema with organization-scoped RBAC and denormalized orgId for query performance.",
+      "Implemented tRPC procedures with middleware for end-to-end type safety, eliminating runtime type errors between client and server.",
+      "Built fractional indexing for Kanban board task reordering — O(1) position updates without rewriting adjacent rows.",
+      "Created an invitation system with secure org-scoped invite links and role assignment on join.",
     ],
     image: `${BASE_PATH}/projects/orbit.png`,
     links: [
@@ -23,84 +45,105 @@ export const featuredProjects: readonly FeaturedProject[] = [
     ],
   },
   {
-    slug: "nexus-cms",
-    name: "Nexus CMS",
-    tagline: "Complaint management system",
+    slug: "stackaudit",
+    name: "StackAudit",
+    tagline: "AI-powered SaaS cost optimizer",
     year: "2026",
     description:
-      "A tool that processes customer complaints using AI. It uses a FastAPI backend with background workers and a LangGraph pipeline to extract information and find duplicate reports.",
+      "A SaaS tool that audits AI/software spending and generates 12-15 actionable optimization recommendations. Features a resilient LLM pipeline (Claude → OpenAI → template fallback), shareable public report URLs, and a lead-capture funnel.",
     longDescription:
-      "This project automates the process of reading and categorizing customer complaints. It uses a FastAPI server and passes long-running AI tasks to Celery background workers. The AI pipeline extracts details and categorizes risk.",
-    technologies: ["FastAPI", "Celery", "LangGraph", "PostgreSQL", "React"],
+      "StackAudit helps teams reduce their AI and SaaS spending. Users input their current tool stack and spending, and the platform generates a detailed audit report with specific cost reduction recommendations. I built a rules-based audit engine that produces 12-15 recommendations, backed by a resilient LLM summary pipeline that degrades gracefully: Claude API → OpenAI API → template fallback. Reports are persisted in Supabase, accessible via public URLs with OpenGraph metadata for social sharing, and include a lead capture form for follow-up.",
+    technologies: ["Next.js", "TypeScript", "Supabase", "Claude API", "OpenAI API", "Tailwind"],
     outcomes: [
-      "Set up a FastAPI backend with Celery and Redis to handle unstructured data processing in the background.",
-      "Used LangGraph to coordinate multiple AI prompts that extract details and assess the risk of complaints.",
-      "Stored historical complaints in PostgreSQL and used pgvector to find similar past issues.",
+      "Built a rules-based audit engine that generates 12-15 specific cost optimization recommendations per report.",
+      "Designed a resilient LLM summary pipeline with three-tier degradation: Claude → OpenAI → template fallback.",
+      "Implemented shareable public report URLs with auto-generated OpenGraph metadata for social preview.",
+      "Created a lead-capture funnel with email collection and report download — demonstrating GTM product thinking.",
     ],
-    image: `${BASE_PATH}/projects/nexus-cms.png`,
+    image: `${BASE_PATH}/projects/stackaudit.png`,
     links: [
-      { label: "GitHub", kind: "source", href: "https://github.com/vbhvx/Nexus-CMS" },
+      { label: "GitHub", kind: "source", href: "https://github.com/vbhvx/StackAudit" },
     ],
-  },
-  {
-    slug: "growthtrack",
-    name: "GrowthTrack",
-    tagline: "Employee growth tracker",
-    year: "2026",
-    description:
-      "A cross-platform mobile and web app. It uses a NestJS backend and a Flutter frontend to help managers track employee goals and promotion readiness.",
-    longDescription:
-      "GrowthTrack is a tool for tracking employee progress. It provides different views for employees and managers. The frontend is built with Flutter, and the API is built with NestJS and Prisma.",
-    technologies: ["Flutter", "NestJS", "Prisma", "PostgreSQL", "JWT"],
-    outcomes: [
-      "Built a cross-platform frontend using Flutter that works on both web and mobile.",
-      "Set up a REST API using NestJS, organizing the code into modules, controllers, and services.",
-      "Created a relational database schema using Prisma to link employees, managers, and goals.",
-    ],
-    image: `${BASE_PATH}/projects/learningdashboard.png`,
-    links: [{ label: "GitHub", kind: "source", href: "https://github.com/vbhvx/GrowthTrack" }],
   },
 ] as const;
 
 export const otherProjects: readonly OtherProject[] = [
   {
+    slug: "nexus-cms",
+    name: "Nexus CMS",
+    tagline: "AI complaint management system",
+    description:
+      "Automated complaint triage for regulated industries using a FastAPI backend with Celery background workers and a LangGraph AI pipeline for risk assessment, duplicate detection, and root cause analysis.",
+    longDescription:
+      "This project automates the process of reading and categorizing customer complaints for manufacturing and pharmaceutical industries. It uses a FastAPI server and passes long-running AI tasks to Celery background workers. The LangGraph AI pipeline extracts details, assesses risk, detects duplicates via pgvector similarity search, and generates CAPA recommendations.",
+    technologies: ["Python", "FastAPI", "Celery", "LangGraph", "PostgreSQL", "Redis", "React 19"],
+    links: [
+      { label: "GitHub", kind: "source", href: "https://github.com/vbhvx/Nexus-CMS" },
+    ],
+  },
+  {
+    slug: "stackauth",
+    name: "StackAuth",
+    tagline: "Auth system built with zero ORMs",
+    description:
+      "A complete authentication and authorization system using raw parameterized SQL queries on PostgreSQL — deliberately avoiding ORMs to understand the fundamentals. JWT + RBAC + Zod validation.",
+    longDescription:
+      "StackAuth is a deliberate exercise in understanding what ORMs abstract away. All database queries use parameterized SQL via the pg driver with connection pooling. Features JWT authentication with httpOnly cookies, role-based access control, Zod validation on every endpoint, auto-bootstrapping schema, and interactive Swagger documentation.",
+    technologies: ["Node.js", "Express.js", "PostgreSQL", "JWT", "bcrypt", "Zod", "Swagger"],
+    links: [
+      { label: "GitHub", kind: "source", href: "https://github.com/vbhvx/StackAuth" },
+    ],
+  },
+  {
+    slug: "growthtrack",
+    name: "GrowthTrack",
+    tagline: "Cross-platform employee growth tracker",
+    description:
+      "Full-stack employee growth and promotion readiness tracking app with Flutter mobile frontend and NestJS backend. Role-specific dashboards for employees, managers, and HR.",
+    longDescription:
+      "GrowthTrack is a tool for tracking employee progress and promotion readiness. It provides different views for employees and managers, with a Promotion Readiness Score algorithm. The frontend is built with Flutter for cross-platform support, and the API is built with NestJS, Prisma, and PostgreSQL.",
+    technologies: ["Flutter", "Dart", "NestJS", "Prisma", "PostgreSQL", "JWT", "Docker"],
+    links: [
+      { label: "GitHub", kind: "source", href: "https://github.com/vbhvx/GrowthTrack" },
+    ],
+  },
+  {
     slug: "notiq",
     name: "Notiq",
-    tagline: "Notes app with AI features",
+    tagline: "AI-powered notes workspace",
     description:
-      "A personal notes app with Markdown editing and public sharing. Added Gemini to summarize notes and extract action items.",
+      "A notes workspace with Markdown editing, auto-save, public sharing, and Gemini AI integration for summaries, action items, and smart title generation.",
     longDescription:
-      "This is a note-taking app built with Next.js. It features a Markdown editor, autosave, and shareable links. I integrated the Gemini API for text summaries and used Prisma with PostgreSQL for data storage.",
+      "Notiq is a note-taking app built with Next.js. It features a split-pane Markdown editor with auto-save (1.5s debounced writes), shareable public links with AI-generated metadata, a productivity insights dashboard, and JWT authentication via NextAuth.js v5.",
     technologies: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Gemini API"],
     links: [
       { label: "GitHub", kind: "source", href: "https://github.com/vbhvx/Notiq" },
-      { label: "Demo", kind: "demo", href: "https://notiq.vaibhavdev.online/dashboard" },
     ],
   },
   {
-    slug: "buildra",
-    name: "Buildra",
-    tagline: "App scaffolding experiment",
+    slug: "nexaapi",
+    name: "NexaAPI",
+    tagline: "REST API with JWT and RBAC",
     description:
-      "An experiment with generating app templates using AI, running background tasks via Inngest, and executing code in sandboxes.",
+      "A versioned REST API with stateless JWT authentication, role-based access control, rate limiting, and interactive Swagger documentation.",
     longDescription:
-      "This project tests how to generate Next.js components using AI. I used Inngest to manage the background steps and E2B sandboxes to run the generated code safely.",
-    technologies: ["Next.js", "TypeScript", "Prisma", "Inngest", "E2B"],
+      "NexaAPI is an Express.js backend that implements JWT authentication, bcrypt password hashing, and role-based access control, with API endpoints documented via Swagger. The React 19 frontend features a dark glassmorphism UI with auth context and Axios interceptors.",
+    technologies: ["Node.js", "Express.js", "MongoDB", "React 19", "JWT", "Swagger"],
     links: [
-      { label: "GitHub", kind: "source", href: "https://github.com/vbhvx/Buildra" },
+      { label: "GitHub", kind: "source", href: "https://github.com/vbhvx/NexaAPI" },
     ],
   },
   {
-    slug: "stackaudit",
-    name: "StackAudit",
-    tagline: "Software spend audit tool",
+    slug: "crm-qa-automation",
+    name: "CRM QA Automation",
+    tagline: "E2E and API test suite",
     description:
-      "A small app that takes a list of AI tools and generates recommendations using a simple rules engine.",
+      "Comprehensive testing suite for a Real Estate CRM using Cypress (Page Object Model) for UI flows, Postman/Newman for API validation, and GitHub Actions for CI/CD automation.",
     longDescription:
-      "This is a straightforward Next.js app. The user selects the tools they use, and the backend applies a set of rules to suggest pricing optimizations.",
-    technologies: ["Next.js", "TypeScript", "Supabase", "Claude API"],
+      "This project contains Cypress end-to-end tests using the Page Object Model pattern, Postman API collections with Newman CLI integration, Python-based test data generators, and a GitHub Actions workflow for automated CI/CD. Also includes WCAG accessibility testing with cypress-axe.",
+    technologies: ["Cypress", "Postman", "GitHub Actions", "Python"],
     links: [
-      { label: "GitHub", kind: "source", href: "https://github.com/vbhvx/StackAudit" },
+      { label: "GitHub", kind: "source", href: "https://github.com/vbhvx/CRM_QA_Automation" },
     ],
   },
   {
@@ -108,59 +151,26 @@ export const otherProjects: readonly OtherProject[] = [
     name: "VibePerfume",
     tagline: "E-commerce storefront",
     description:
-      "A storefront featuring product filtering, a photo gallery, and user reviews.",
+      "A luxury perfume storefront with category filtering, lightbox gallery, interactive review system with star ratings, and Web Share API integration.",
     longDescription:
-      "VibePerfume is built with the MERN stack (MongoDB, Express, React, Node.js). It includes category filtering and an interactive review system.",
-    technologies: ["React", "Node.js", "Express.js", "MongoDB"],
+      "VibePerfume is a MERN stack e-commerce application. It includes product filtering, a photo gallery with lightbox, star ratings with real-time review updates, and responsive design across mobile, tablet, and desktop.",
+    technologies: ["React", "TypeScript", "Node.js", "Express.js", "MongoDB"],
     links: [
       { label: "GitHub", kind: "source", href: "https://github.com/vbhvx/VibePerfume" },
     ],
   },
   {
-    slug: "nexaapi",
-    name: "NexaAPI",
-    tagline: "REST API with JWT auth",
-    description:
-      "A backend API project used to practice creating versioned REST endpoints, authentication, and Swagger documentation.",
-    longDescription:
-      "NexaAPI is an Express.js backend project. It implements JWT authentication, password hashing, and role-based access control, with API endpoints documented via Swagger.",
-    technologies: ["Node.js", "Express.js", "MongoDB", "React", "JWT", "Swagger"],
-    links: [
-      { label: "GitHub", kind: "source", href: "https://github.com/vbhvx/NexaAPI" },
-    ],
-  },
-  {
-    slug: "stackauth",
-    name: "StackAuth",
-    tagline: "Auth API with PostgreSQL",
-    description:
-      "A backend authentication service that implements JWT login and basic role-based access control.",
-    longDescription:
-      "StackAuth is an Express.js and PostgreSQL backend. It focuses on authentication patterns, including password hashing, JWTs, and database roles.",
-    technologies: ["Express.js", "PostgreSQL", "JWT", "Swagger"],
-    links: [{ label: "GitHub", kind: "source", href: "https://github.com/vbhvx/StackAuth" }],
-  },
-  {
-    slug: "crm-qa-automation",
-    name: "CRM QA Automation",
-    tagline: "Automated testing suite",
-    description:
-      "A set of tests for a CRM app using Cypress for UI flows and Postman for API checks.",
-    longDescription:
-      "This project contains Cypress end-to-end tests and Postman API collections, connected to a GitHub Actions workflow to run the tests automatically.",
-    technologies: ["Cypress", "Postman", "GitHub Actions"],
-    links: [{ label: "GitHub", kind: "source", href: "https://github.com/vbhvx/CRM_QA_Automation" }],
-  },
-  {
     slug: "next-gen-learning-dashboard",
     name: "Learning Dashboard",
-    tagline: "Progress dashboard",
+    tagline: "Progress tracking dashboard",
     description:
-      "A Next.js dashboard that displays user progress and statistics using data from Supabase.",
+      "A Next.js dashboard displaying course progress and statistics using data from Supabase, with Bento grid layout and Framer Motion animations.",
     longDescription:
-      "This project is a React dashboard that shows course progress. It fetches data from Supabase and uses Next.js Server Components.",
-    technologies: ["Next.js", "Supabase"],
-    links: [{ label: "GitHub", kind: "source", href: "https://github.com/vbhvx/NextGen-Learning-Dashboard" }],
+      "This project is a React dashboard that shows course progress. It fetches data from Supabase and uses Next.js Server Components with a clean Bento grid layout and fluid animations.",
+    technologies: ["Next.js", "Supabase", "Tailwind CSS", "Framer Motion"],
+    links: [
+      { label: "GitHub", kind: "source", href: "https://github.com/vbhvx/NextGen-Learning-Dashboard" },
+    ],
   },
 ] as const;
 

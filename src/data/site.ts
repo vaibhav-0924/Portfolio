@@ -14,9 +14,9 @@ export const siteConfig = {
   email: "vaibhavsaini2409@gmail.com",
   avatarUrl: `${BASE_PATH}/profile/profile.jpeg`,
   resumeUrl: `${BASE_PATH}/documents/resume.pdf`,
-  role: "B.Tech CS — Personal web projects",
+  role: "Full-Stack Developer · AI, SaaS & Web Engineering",
   metaDescription:
-    "Vaibhav Saini builds personal projects covering frontends, APIs, authentication, databases, and AI integrations.",
+    "Vaibhav Saini — Full-Stack Developer creating scalable digital products with TypeScript, Python, and Flutter. Featuring AI applications, multi-tenant platforms, and SaaS solutions.",
 } as const;
 
 export const socialLinks = {
@@ -57,12 +57,12 @@ export const navigation: readonly NavigationItem[] = [
 ] as const;
 
 export const heroContent = {
-  availabilityLabel: "FULL-STACK ENGINEER",
+  availabilityLabel: "OPEN TO OPPORTUNITIES",
   title: "Vaibhav Saini",
-  subtitle: "Full-Stack Dev · Build What Matters",
-  stack: "Next.js | FastAPI | NestJS | PostgreSQL",
+  subtitle: "Full-Stack Developer · AI, SaaS & Web Engineering",
+  stack: "TypeScript · Python · Next.js · FastAPI · PostgreSQL",
   summary:
-    "I build full-stack web applications. I focus on database design, API development, and connecting frontends to reliable backends.",
+    "Creating scalable digital products — from AI-powered platforms and multi-tenant systems to SaaS tools and developer utilities.",
 } as const;
 
 export const heroActions: readonly ActionLink[] = [
@@ -86,18 +86,18 @@ export const aboutContent = {
   title: "About",
   focusTitle: "Focus areas",
   focusDescription:
-    "Building web applications with a focus on data modeling and APIs.",
+    "Scalable web applications, AI integrations, and developer tooling.",
   paragraphs: [
-    "I am a software engineer who works across the stack. Most of my recent work involves Next.js, Node.js, Python, and PostgreSQL.",
-    "I focus on understanding how data is structured and how APIs are designed. In my projects, I try to solve practical problems like managing access control, handling background tasks, and integrating AI models into existing workflows.",
+    "I design and build full-stack applications across TypeScript, Python, and Flutter — focusing on clean architecture, reliable APIs, and thoughtful data modeling.",
+    "Recent work includes an AI code generation platform, a multi-tenant collaborative workspace, and a SaaS cost optimization tool. Each project is built with authenticated workflows, structured data, and documented engineering decisions.",
   ],
 } as const;
 
 export const projectsContent = {
   eyebrow: "Selected Work",
-  title: "Projects, shown in code",
+  title: "Projects",
   description:
-    "A set of personal projects that cover frontends, APIs, authentication, RBAC, data modeling, and AI integrations.",
+    "A collection of full-stack applications spanning AI, SaaS, and web engineering.",
 } as const;
 
 export const proofContent: {
@@ -105,39 +105,39 @@ export const proofContent: {
   title: string;
   details: readonly ProofDetail[];
 } = {
-  eyebrow: "Evaluation",
-  title: "How the work is structured for review",
+  eyebrow: "Approach",
+  title: "How I work",
   details: [
     {
-      text: "Live demos that let you try the actual apps, not just screenshots",
-      href: "https://github.com/vbhvx/Notiq",
+      text: "Architecture blueprints documenting design decisions and trade-offs",
+      href: "https://github.com/vbhvx/Buildra",
     },
     {
-      text: "Public source code with READMEs covering auth, APIs, schemas, and AI integrations",
-      href: "https://github.com/vbhvx/NexaAPI",
+      text: "Public source code with detailed READMEs and API documentation",
+      href: "https://github.com/vbhvx/Orbit",
     },
     {
-      text: "Continuous improvement through public code and iterative development",
-      href: "https://github.com/vbhvx",
+      text: "Automated testing with Cypress, Postman, and CI/CD pipelines",
+      href: "https://github.com/vbhvx/CRM_QA_Automation",
     },
   ],
 } as const;
 
 export const opportunityContent = {
-  eyebrow: "Interests",
-  title: "Areas I'm excited to work on",
+  eyebrow: "Expertise",
+  title: "What I work with",
   details: [
-    "Frontend and API work with React, Next.js, and Node.js",
-    "Authentication, RBAC, and access control",
-    "Database design and API structure",
-    "AI API integrations and simple agent workflows",
+    "Full-stack development with React, Next.js, and Node.js",
+    "AI integrations — agent loops, LLM pipelines, background processing",
+    "Database design with PostgreSQL, Prisma, Drizzle, and raw SQL",
+    "System architecture — multi-tenancy, RBAC, event-driven workflows",
   ],
 } as const;
 
 export const contactContent = {
   title: "Get in Touch",
   description:
-    "I'm looking for junior software engineering roles where I can contribute to real products and keep learning. Let's connect.",
+    "Open to internship and full-time opportunities. Let's build something meaningful together.",
   actions: [
     {
       label: "Email",
