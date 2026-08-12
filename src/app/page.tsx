@@ -158,10 +158,7 @@ export default function Page() {
 
       <section id="about" className="space-y-6">
         <BlurFade delay={BLUR_FADE_DELAY * 7} inView>
-          <div className="space-y-2">
-            <div className="inline-block rounded-full border border-primary/20 bg-primary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-primary">
-              {PORTFOLIO.about.title}
-            </div>
+          <div className="space-y-4">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
               About
             </h2>
@@ -197,9 +194,6 @@ export default function Page() {
       <section id="projects" className="space-y-10">
         <BlurFade delay={BLUR_FADE_DELAY * 10} inView>
           <div className="space-y-3 text-center">
-            <div className="inline-block rounded-full border border-primary/20 bg-primary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-primary">
-              {PORTFOLIO.projectsContent.eyebrow}
-            </div>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
               {PORTFOLIO.projectsContent.title}
             </h2>
@@ -234,30 +228,29 @@ export default function Page() {
               <h3 className="text-2xl font-bold">Other Projects</h3>
               <p className="mt-2 text-muted-foreground">Additional builds covering AI agents, mobile, auth services, testing, and dashboards.</p>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {PORTFOLIO.otherProjects.map((project, index) => (
-                <BlurFade
-                  key={project.name}
-                  delay={BLUR_FADE_DELAY * 11 + index * 0.05}
-                  inView
-                >
-                  <div className="glass flex h-full flex-col rounded-[1.5rem] border border-border/40 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/10">
-                    <div className="mb-4 text-primary opacity-80 transition-transform duration-300 hover:scale-110">
-                      <Icons.folder className="size-8" />
-                    </div>
-                    <h4 className="mb-1 font-semibold">{project.name}</h4>
-                    {project.tagline && <p className="mb-4 text-sm text-muted-foreground">{project.tagline}</p>}
-                    <div className="mt-auto flex flex-wrap gap-1.5">
-                      {project.technologies.map(tag => (
-                        <Badge key={tag} className="rounded-full bg-secondary/50 px-2 py-0.5 text-[10px]" variant="secondary">
-                          {tag}
-                        </Badge>
-                      ))}
+            <BlurFade delay={BLUR_FADE_DELAY * 11} inView>
+              <Carousel autoPlayInterval={4000}>
+                {PORTFOLIO.otherProjects.map((project, slideIndex) => (
+                  <div key={slideIndex} className="h-full px-2 py-1">
+                    <div className="glass flex h-full mx-auto max-w-md flex-col rounded-[1.5rem] border border-border/40 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/10">
+                      <div className="mb-4 text-primary opacity-80 transition-transform duration-300 hover:scale-110">
+                        <Icons.folder className="size-8" />
+                      </div>
+                      <h4 className="mb-1 font-semibold">{project.name}</h4>
+                      {project.tagline && <p className="mb-2 text-sm text-muted-foreground">{project.tagline}</p>}
+                      {project.description && <p className="mb-4 text-xs leading-relaxed text-foreground/70">{project.description}</p>}
+                      <div className="mt-auto flex flex-wrap gap-1.5">
+                        {project.technologies.map(tag => (
+                          <Badge key={tag} className="rounded-full bg-secondary/50 px-2 py-0.5 text-[10px]" variant="secondary">
+                            {tag}
+                          </Badge>
+                        ))}
+                      </div>
                     </div>
                   </div>
-                </BlurFade>
-              ))}
-            </div>
+                ))}
+              </Carousel>
+            </BlurFade>
           </div>
         )}
       </section>
@@ -265,9 +258,6 @@ export default function Page() {
       <section id="skills" className="space-y-8">
         <BlurFade delay={BLUR_FADE_DELAY * 12} inView>
           <div className="space-y-2">
-            <div className="inline-block rounded-full border border-primary/20 bg-primary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-primary">
-              Skills
-            </div>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
               Technical depth across the stack
             </h2>
@@ -321,9 +311,6 @@ export default function Page() {
         <BlurFade delay={BLUR_FADE_DELAY * 14} inView>
           <div className="glass gradient-border rounded-[2rem] p-6 sm:p-8">
             <div className="space-y-4">
-              <div className="inline-block rounded-full border border-primary/20 bg-primary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-primary">
-                {PORTFOLIO.proof.eyebrow}
-              </div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
                 {PORTFOLIO.proof.title}
               </h2>
@@ -370,9 +357,6 @@ export default function Page() {
         <BlurFade delay={BLUR_FADE_DELAY * 14} inView>
           <div className="glass gradient-border rounded-[2rem] p-6 sm:p-8">
             <div className="space-y-4">
-              <div className="inline-block rounded-full border border-primary/20 bg-primary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-primary">
-                {PORTFOLIO.opportunity.eyebrow}
-              </div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
                 {PORTFOLIO.opportunity.title}
               </h2>
@@ -396,9 +380,6 @@ export default function Page() {
         <BlurFade delay={BLUR_FADE_DELAY * 15} inView>
           <div className="grid gap-6 rounded-[2rem] border border-border/50 bg-gradient-to-br from-primary/10 via-background to-background p-6 shadow-lg shadow-primary/5 sm:p-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
             <div className="space-y-4">
-              <div className="inline-block rounded-full border border-primary/20 bg-primary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-primary">
-                Contact
-              </div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                 {PORTFOLIO.contact.title}
               </h2>

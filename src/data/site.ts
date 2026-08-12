@@ -57,7 +57,7 @@ export const navigation: readonly NavigationItem[] = [
 ] as const;
 
 export const heroContent = {
-  availabilityLabel: "OPEN TO OPPORTUNITIES",
+  availabilityLabel: "Ready to Build",
   title: "Vaibhav Saini",
   subtitle: "Full-Stack Developer · AI, SaaS & Web Engineering",
   stack: "TypeScript · Python · Next.js · FastAPI · PostgreSQL",
@@ -94,18 +94,15 @@ export const aboutContent = {
 } as const;
 
 export const projectsContent = {
-  eyebrow: "Selected Work",
   title: "Projects",
   description:
     "A collection of full-stack applications spanning AI, SaaS, and web engineering.",
 } as const;
 
 export const proofContent: {
-  eyebrow: string;
   title: string;
   details: readonly ProofDetail[];
 } = {
-  eyebrow: "Approach",
   title: "How I work",
   details: [
     {
@@ -124,7 +121,6 @@ export const proofContent: {
 } as const;
 
 export const opportunityContent = {
-  eyebrow: "Expertise",
   title: "What I work with",
   details: [
     "Full-stack development with React, Next.js, and Node.js",
@@ -154,12 +150,6 @@ export const contactContent = {
     {
       label: "GitHub",
       href: socialLinks.github.href,
-      variant: "outline",
-      external: true,
-    },
-    {
-      label: "Resume",
-      href: socialLinks.resume.href,
       variant: "outline",
       external: true,
     },

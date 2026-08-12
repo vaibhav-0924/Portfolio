@@ -45,9 +45,6 @@ export default function ProjectsPage() {
       <section id="featured-projects" className="space-y-10">
         <BlurFade delay={BLUR_FADE_DELAY * 4} inView>
           <div className="space-y-2">
-            <div className="inline-block rounded-full border border-primary/20 bg-primary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-primary">
-              Featured
-            </div>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
               Featured projects
             </h2>
@@ -132,9 +129,6 @@ export default function ProjectsPage() {
         <section id="other-projects" className="space-y-10">
           <BlurFade delay={BLUR_FADE_DELAY * 8} inView>
             <div className="space-y-2">
-              <div className="inline-block rounded-full border border-primary/20 bg-primary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-primary">
-                More Work
-              </div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
                 Additional builds
               </h2>
@@ -149,7 +143,7 @@ export default function ProjectsPage() {
             {PORTFOLIO.otherProjects.map((project, index) => (
               <BlurFade
                 key={project.slug}
-                delay={BLUR_FADE_DELAY * 9 + index * 0.06}
+                delay={BLUR_FADE_DELAY * 9 + index * 0.08}
                 inView
               >
                 <Link

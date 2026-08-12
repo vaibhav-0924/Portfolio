@@ -73,7 +73,7 @@ export const otherProjects: readonly OtherProject[] = [
     name: "Nexus CMS",
     tagline: "AI complaint management system",
     description:
-      "Automated complaint triage for regulated industries using a FastAPI backend with Celery background workers and a LangGraph AI pipeline for risk assessment, duplicate detection, and root cause analysis.",
+      "AI-driven complaint triage with FastAPI, Celery workers, and a LangGraph pipeline for risk scoring and duplicate detection.",
     longDescription:
       "This project automates the process of reading and categorizing customer complaints for manufacturing and pharmaceutical industries. It uses a FastAPI server and passes long-running AI tasks to Celery background workers. The LangGraph AI pipeline extracts details, assesses risk, detects duplicates via pgvector similarity search, and generates CAPA recommendations.",
     technologies: ["Python", "FastAPI", "Celery", "LangGraph", "PostgreSQL", "Redis", "React 19"],
@@ -86,7 +86,7 @@ export const otherProjects: readonly OtherProject[] = [
     name: "StackAuth",
     tagline: "Auth system built with zero ORMs",
     description:
-      "A complete authentication and authorization system using raw parameterized SQL queries on PostgreSQL — deliberately avoiding ORMs to understand the fundamentals. JWT + RBAC + Zod validation.",
+      "Auth system using raw SQL on PostgreSQL — no ORMs. JWT, RBAC, and Zod validation.",
     longDescription:
       "StackAuth is a deliberate exercise in understanding what ORMs abstract away. All database queries use parameterized SQL via the pg driver with connection pooling. Features JWT authentication with httpOnly cookies, role-based access control, Zod validation on every endpoint, auto-bootstrapping schema, and interactive Swagger documentation.",
     technologies: ["Node.js", "Express.js", "PostgreSQL", "JWT", "bcrypt", "Zod", "Swagger"],
@@ -99,7 +99,7 @@ export const otherProjects: readonly OtherProject[] = [
     name: "GrowthTrack",
     tagline: "Cross-platform employee growth tracker",
     description:
-      "Full-stack employee growth and promotion readiness tracking app with Flutter mobile frontend and NestJS backend. Role-specific dashboards for employees, managers, and HR.",
+      "Employee growth and promotion tracker with Flutter frontend, NestJS API, and role-based dashboards.",
     longDescription:
       "GrowthTrack is a tool for tracking employee progress and promotion readiness. It provides different views for employees and managers, with a Promotion Readiness Score algorithm. The frontend is built with Flutter for cross-platform support, and the API is built with NestJS, Prisma, and PostgreSQL.",
     technologies: ["Flutter", "Dart", "NestJS", "Prisma", "PostgreSQL", "JWT", "Docker"],
@@ -112,7 +112,7 @@ export const otherProjects: readonly OtherProject[] = [
     name: "Notiq",
     tagline: "AI-powered notes workspace",
     description:
-      "A notes workspace with Markdown editing, auto-save, public sharing, and Gemini AI integration for summaries, action items, and smart title generation.",
+      "Markdown notes app with auto-save, public sharing, and Gemini AI for summaries and smart titles.",
     longDescription:
       "Notiq is a note-taking app built with Next.js. It features a split-pane Markdown editor with auto-save (1.5s debounced writes), shareable public links with AI-generated metadata, a productivity insights dashboard, and JWT authentication via NextAuth.js v5.",
     technologies: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Gemini API"],
@@ -125,7 +125,7 @@ export const otherProjects: readonly OtherProject[] = [
     name: "NexaAPI",
     tagline: "REST API with JWT and RBAC",
     description:
-      "A versioned REST API with stateless JWT authentication, role-based access control, rate limiting, and interactive Swagger documentation.",
+      "Versioned REST API with JWT auth, RBAC, rate limiting, and Swagger docs.",
     longDescription:
       "NexaAPI is an Express.js backend that implements JWT authentication, bcrypt password hashing, and role-based access control, with API endpoints documented via Swagger. The React 19 frontend features a dark glassmorphism UI with auth context and Axios interceptors.",
     technologies: ["Node.js", "Express.js", "MongoDB", "React 19", "JWT", "Swagger"],
@@ -138,7 +138,7 @@ export const otherProjects: readonly OtherProject[] = [
     name: "CRM QA Automation",
     tagline: "E2E and API test suite",
     description:
-      "Comprehensive testing suite for a Real Estate CRM using Cypress (Page Object Model) for UI flows, Postman/Newman for API validation, and GitHub Actions for CI/CD automation.",
+      "Cypress E2E + Postman API test suite for a CRM, with CI/CD via GitHub Actions.",
     longDescription:
       "This project contains Cypress end-to-end tests using the Page Object Model pattern, Postman API collections with Newman CLI integration, Python-based test data generators, and a GitHub Actions workflow for automated CI/CD. Also includes WCAG accessibility testing with cypress-axe.",
     technologies: ["Cypress", "Postman", "GitHub Actions", "Python"],
@@ -151,7 +151,7 @@ export const otherProjects: readonly OtherProject[] = [
     name: "VibePerfume",
     tagline: "E-commerce storefront",
     description:
-      "A luxury perfume storefront with category filtering, lightbox gallery, interactive review system with star ratings, and Web Share API integration.",
+      "MERN e-commerce storefront with filtering, lightbox gallery, and star ratings.",
     longDescription:
       "VibePerfume is a MERN stack e-commerce application. It includes product filtering, a photo gallery with lightbox, star ratings with real-time review updates, and responsive design across mobile, tablet, and desktop.",
     technologies: ["React", "TypeScript", "Node.js", "Express.js", "MongoDB"],
@@ -164,7 +164,7 @@ export const otherProjects: readonly OtherProject[] = [
     name: "Learning Dashboard",
     tagline: "Progress tracking dashboard",
     description:
-      "A Next.js dashboard displaying course progress and statistics using data from Supabase, with Bento grid layout and Framer Motion animations.",
+      "Course progress dashboard with Supabase data, Bento grid layout, and Framer Motion animations.",
     longDescription:
       "This project is a React dashboard that shows course progress. It fetches data from Supabase and uses Next.js Server Components with a clean Bento grid layout and fluid animations.",
     technologies: ["Next.js", "Supabase", "Tailwind CSS", "Framer Motion"],
