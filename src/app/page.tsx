@@ -226,7 +226,6 @@ export default function Page() {
           <div className="mt-16 border-t border-border/30 pt-10">
             <div className="mb-8 text-center">
               <h3 className="text-2xl font-bold">Other Projects</h3>
-              <p className="mt-2 text-muted-foreground">Additional builds covering AI agents, mobile, auth services, testing, and dashboards.</p>
             </div>
             <BlurFade delay={BLUR_FADE_DELAY * 11} inView>
               <Carousel autoPlayInterval={4000}>
