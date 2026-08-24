@@ -231,9 +231,25 @@ export default function Page() {
               <Carousel autoPlayInterval={4000}>
                 {PORTFOLIO.otherProjects.map((project, slideIndex) => (
                   <div key={slideIndex} className="h-full px-2 py-1">
-                    <div className="glass flex h-full mx-auto max-w-md flex-col rounded-[1.5rem] border border-border/40 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/10">
-                      <div className="mb-4 text-primary opacity-80 transition-transform duration-300 hover:scale-110">
-                        <Icons.folder className="size-8" />
+                    <a
+                      href={project.links?.find(l => l.kind === "source")?.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="glass flex h-full mx-auto max-w-md cursor-pointer flex-col rounded-[1.5rem] border border-border/40 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/10"
+                    >
+                      <div className="mb-4 flex items-center justify-between">
+                        <div className="text-primary opacity-80 transition-transform duration-300 hover:scale-110">
+                          <Icons.folder className="size-8" />
+                        </div>
+                        {project.links?.filter(l => l.kind === "source" && l.href).map(link => (
+                          <span
+                            key={link.label}
+                            className="text-muted-foreground transition-colors duration-200 hover:text-primary"
+                            aria-label={`${project.name} on GitHub`}
+                          >
+                            <Icons.github className="size-5" />
+                          </span>
+                        ))}
                       </div>
                       <h4 className="mb-1 font-semibold">{project.name}</h4>
                       {project.tagline && <p className="mb-2 text-sm text-muted-foreground">{project.tagline}</p>}
@@ -245,7 +261,7 @@ export default function Page() {
                           </Badge>
                         ))}
                       </div>
-                    </div>
+                    </a>
                   </div>
                 ))}
               </Carousel>

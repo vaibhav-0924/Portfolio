@@ -14,9 +14,9 @@ export const siteConfig = {
   email: "vaibhavsaini2409@gmail.com",
   avatarUrl: `${BASE_PATH}/profile/profile.jpeg`,
   resumeUrl: `${BASE_PATH}/documents/resume.pdf`,
-  role: "Full-Stack Developer · AI, SaaS & Web Engineering",
+  role: "Software Developer · Web • Backend • AI",
   metaDescription:
-    "Vaibhav Saini — Full-Stack Developer creating scalable digital products with TypeScript, Python, and Flutter. Featuring AI applications, multi-tenant platforms, and SaaS solutions.",
+    "Vaibhav Saini — Software developer building projects across web, backend, and AI. Featuring AI applications, multi-tenant platforms, and SaaS solutions.",
 } as const;
 
 export const socialLinks = {
@@ -57,12 +57,12 @@ export const navigation: readonly NavigationItem[] = [
 ] as const;
 
 export const heroContent = {
-  availabilityLabel: "Ready to Build",
+  availabilityLabel: "Open to Build",
   title: "Vaibhav Saini",
-  subtitle: "Full-Stack Developer · AI, SaaS & Web Engineering",
+  subtitle: "Taking software apart. Building it back.",
   stack: "TypeScript · Python · Next.js · FastAPI · PostgreSQL",
   summary:
-    "Creating scalable digital products — from AI-powered platforms and multi-tenant systems to SaaS tools and developer utilities.",
+    "Software developer working across web, backend, and AI. Each project has documented architecture decisions, real technical trade-offs, and honest engineering.",
 } as const;
 
 export const heroActions: readonly ActionLink[] = [
@@ -86,27 +86,27 @@ export const aboutContent = {
   title: "About",
   focusTitle: "Focus areas",
   focusDescription:
-    "Scalable web applications, AI integrations, and developer tooling.",
+    "Building software across web, backend, and AI.",
   paragraphs: [
-    "I design and build full-stack applications across TypeScript, Python, and Flutter — focusing on clean architecture, reliable APIs, and thoughtful data modeling.",
-    "Recent work includes an AI code generation platform, a multi-tenant collaborative workspace, and a SaaS cost optimization tool. Each project is built with authenticated workflows, structured data, and documented engineering decisions.",
+    "I build projects across TypeScript and Python — focusing on clean architecture, reliable APIs, and thoughtful data modeling.",
+    "Recent work includes an AI code generation platform (Buildra), a multi-tenant collaborative workspace (Orbit), and a SaaS cost optimization tool (StackAudit). Each project is built with authenticated workflows, structured data, and documented architecture decisions.",
   ],
 } as const;
 
 export const projectsContent = {
   title: "Projects",
   description:
-    "A collection of full-stack applications spanning AI, SaaS, and web engineering.",
+    "Web. Backend. AI. Systems built from the ground up.",
 } as const;
 
 export const proofContent: {
   title: string;
   details: readonly ProofDetail[];
 } = {
-  title: "How I work",
+  title: "Engineering Standards",
   details: [
     {
-      text: "Architecture blueprints documenting design decisions and trade-offs",
+      text: "Architecture documents explaining decisions and trade-offs",
       href: "https://github.com/vbhvx/Buildra",
     },
     {
@@ -121,12 +121,12 @@ export const proofContent: {
 } as const;
 
 export const opportunityContent = {
-  title: "What I work with",
+  title: "Current Focus",
   details: [
-    "Full-stack development with React, Next.js, and Node.js",
+    "Web development with React, Next.js, and Node.js",
     "AI integrations — agent loops, LLM pipelines, background processing",
     "Database design with PostgreSQL, Prisma, Drizzle, and raw SQL",
-    "System architecture — multi-tenancy, RBAC, event-driven workflows",
+    "Backend architecture — multi-tenancy, RBAC, event-driven workflows",
   ],
 } as const;
 

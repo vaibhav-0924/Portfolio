@@ -1,0 +1,119 @@
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[letterpaper,margin=0.5in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{fontawesome5}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{array}
+
+\input{glyphtounicode}
+\pdfgentounicode=1
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=*, itemsep=2pt, topsep=2pt, parsep=0pt, partopsep=0pt}
+\renewcommand{\baselinestretch}{1.02}
+
+\titleformat{\section}
+  {\large\bfseries}
+  {}
+  {0pt}
+  {}
+  [\vspace{-2pt}\titlerule]
+
+\titlespacing*{\section}{0pt}{8pt}{5pt}
+
+\newcommand{\resumeItem}[1]{\item #1}
+\newcommand{\projectHeader}[4]{
+  \textbf{#1} - #2 \hfill #3\\
+  \textit{#4}
+}
+
+\begin{document}
+
+\begin{center}
+  {\Huge \textbf{Vaibhav Saini}}\\[4pt]
+  \href{mailto:vaibhavsaini2409@gmail.com}{\faEnvelope\ vaibhavsaini2409@gmail.com} $|$
+  \href{https://www.linkedin.com/in/vaibhavsaini2/}{\faLinkedin\ LinkedIn} $|$
+  \href{https://github.com/vbhvx}{\faGithub\ GitHub} $|$
+  \href{https://vaibhavdev.online/}{\faGlobe\ Portfolio} $|$
+  Delhi, India
+\end{center}
+\vspace{-8pt}
+
+\section{Education}
+\textbf{G.B. Pant DSEU Campus-I}, Delhi, India \hfill Aug 2024 - Jun 2028\\
+Bachelor of Technology in Computer Science and Engineering\\
+\textbf{Relevant Coursework:} Data Structures and Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, Computer Networks
+
+\section{Technical Skills}
+\textbf{Languages:} TypeScript, JavaScript, Python, SQL, Dart\\
+\textbf{Frontend:} Next.js, React, Tailwind CSS, Flutter\\
+\textbf{Backend:} Node.js, Express.js, NestJS, FastAPI, tRPC, Celery\\
+\textbf{Databases \& ORMs:} PostgreSQL, Prisma, Drizzle ORM, Supabase, MongoDB\\
+\textbf{Auth \& Security:} JWT, Role-Based Access Control (RBAC), bcrypt\\
+\textbf{Tools:} Git, Docker, Postman, Cypress, Swagger, LangGraph
+
+\begin{comment}\section{Experience}
+
+\textbf{Independent Software Developer} \hfill Apr 2025 -- Present\\
+\textit{Building software across web, backend, and AI}
+\begin{itemize}
+  \resumeItem{Built multiple projects from scratch, each with authenticated workflows, data models, and documented architecture decisions.}
+  \resumeItem{Worked across multiple stacks: Next.js/TypeScript, FastAPI/Python, and raw SQL on PostgreSQL.}
+\end{itemize}
+
+\textbf{Open Source Contributor} --- Open Source Connect \hfill Jul 2025 -- Jan 2026\\
+\textit{10+ merged pull requests across multiple repositories}
+\begin{itemize}
+  \resumeItem{Contributed bug fixes and feature implementations across JavaScript/TypeScript open source projects.}
+  \resumeItem{Reviewed pull requests, followed contribution guidelines, and coordinated with maintainers.}
+\end{itemize}
+\end{comment}
+
+\section{Projects}
+
+\projectHeader
+  {Buildra}
+  {AI Code Generation Platform}
+  {\href{https://github.com/vbhvx/Buildra}{GitHub}}
+  {Next.js, TypeScript, Inngest, E2B, Gemini AI, Prisma, PostgreSQL}
+\begin{itemize}
+  \resumeItem{Architected an AI agent loop using Gemini that iteratively generates, validates, and self-corrects Next.js application code across multiple files.}
+  \resumeItem{Integrated E2B cloud sandboxes for secure execution of AI-generated code with real-time preview and file exploration.}
+  \resumeItem{Built event-driven pipeline with Inngest for reliable multi-step AI orchestration with automatic retries and step-level observability.}
+  \resumeItem{Implemented Server-Sent Events for token-by-token streaming, reducing perceived response latency by approximately 60\%.}
+\end{itemize}
+
+\projectHeader
+  {Orbit}
+  {Multi-Tenant Collaborative Platform}
+  {\href{https://github.com/vbhvx/Orbit}{GitHub}}
+  {Next.js, tRPC, Drizzle ORM, PostgreSQL, Supabase Auth}
+\begin{itemize}
+  \resumeItem{Designed multi-tenant PostgreSQL schema with organization-scoped RBAC and denormalized orgId for query performance while maintaining strict data isolation.}
+  \resumeItem{Implemented tRPC with middleware for end-to-end type safety between client and server, eliminating runtime type errors.}
+  \resumeItem{Built fractional indexing system for Kanban board enabling O(1) drag-and-drop reordering without rewriting adjacent database rows.}
+  \resumeItem{Created secure invitation system with org-scoped invite links and automatic role assignment on join.}
+\end{itemize}
+
+\projectHeader
+  {StackAudit}
+  {AI-Powered SaaS Cost Optimizer}
+  {\href{https://github.com/vbhvx/StackAudit}{GitHub}}
+  {Next.js, TypeScript, Supabase, Claude API, OpenAI API}
+\begin{itemize}
+  \resumeItem{Built rules-based audit engine generating 12--15 specific cost optimization recommendations per report.}
+  \resumeItem{Designed resilient LLM summary pipeline with three-tier degradation: Claude $\rightarrow$ OpenAI $\rightarrow$ template fallback.}
+  \resumeItem{Implemented shareable public report URLs with auto-generated OpenGraph metadata for social preview.}
+  \resumeItem{Created lead-capture funnel with email collection and report download.}
+\end{itemize}
+
+\section{Certifications}
+\textbf{Google Cloud Skills Boost --- Vertex AI: Prompt Design} \hfill Jul 2025
+
+\end{document}

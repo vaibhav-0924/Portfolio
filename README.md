@@ -216,14 +216,6 @@ The site exports as fully static HTML — compatible with any static hosting pro
 
 ## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).
-
----
-
-<div align="center">
-
-**Built by [Vaibhav Saini](https://vaibhavdev.online/)** · Delhi, India
-
-[Portfolio](https://vaibhavdev.online/) · [GitHub](https://github.com/vbhvx) · [LinkedIn](https://linkedin.com/in/vaibhavsaini2/) · [X](https://x.com/vbhvdev)
+This project is open source and available under the [MIT License](LICENSE). 
 
 </div>

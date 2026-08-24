@@ -16,7 +16,7 @@ export const featuredProjects: readonly FeaturedProject[] = [
       "Architected an AI agent loop using Gemini and Inngest that iteratively generates, validates, and corrects code across multiple files.",
       "Integrated E2B cloud sandboxes for secure code execution with real-time preview and file system exploration.",
       "Implemented Server-Sent Events for token-by-token streaming, reducing perceived latency by ~60% compared to batch responses.",
-      "Built with Clerk authentication, Prisma ORM, and React 19 Server Components for a production-grade frontend.",
+      "Built with Clerk authentication, Prisma ORM, and React 19 Server Components.",
     ],
     image: `${BASE_PATH}/projects/buildra.png`,
     links: [
@@ -58,7 +58,7 @@ export const featuredProjects: readonly FeaturedProject[] = [
       "Built a rules-based audit engine that generates 12-15 specific cost optimization recommendations per report.",
       "Designed a resilient LLM summary pipeline with three-tier degradation: Claude → OpenAI → template fallback.",
       "Implemented shareable public report URLs with auto-generated OpenGraph metadata for social preview.",
-      "Created a lead-capture funnel with email collection and report download — demonstrating GTM product thinking.",
+      "Created a lead-capture funnel with email collection and report download.",
     ],
     image: `${BASE_PATH}/projects/stackaudit.png`,
     links: [
